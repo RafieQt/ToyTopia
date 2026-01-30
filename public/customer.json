@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Ayesha Rahman",
+    "review": "The service was excellent and the website experience was smooth and user-friendly. Highly recommended!",
+    "rating": 5,
+    "image": "https://img.icons8.com/?size=100&id=BnpbsNUPf9Me&format=png&color=000000"
+  },
+  {
+    "id": 2,
+    "name": "Tanvir Hasan",
+    "review": "Great quality and fast delivery. Customer support was very helpful throughout the process.",
+    "rating": 4,
+    "image": "https://img.icons8.com/?size=100&id=S2hiqvN0zBDu&format=png&color=000000"
+  },
+  {
+    "id": 3,
+    "name": "Nusrat Jahan",
+    "review": "I really liked the clean design and ease of use. Will definitely come back again.",
+    "rating": 5,
+    "image": "https://img.icons8.com/?size=100&id=nnCbVdIlW6Wv&format=png&color=000000"
+  },
+  {
+    "id": 4,
+    "name": "Mehedi Ahmed",
+    "review": "Overall a good experience. There is still some room for improvement, but I am satisfied.",
+    "rating": 4,
+    "image": "https://img.icons8.com/?size=100&id=12xQDydim8rE&format=png&color=000000"
+  },
+  {
+    "id": 5,
+    "name": "Sadia Islam",
+    "review": "The platform is very intuitive and easy to navigate. Loved the modern UI!",
+    "rating": 5,
+    "image": "https://img.icons8.com/?size=100&id=12xQDydim8rE&format=png&color=000000"
+  },
+  {
+    "id": 6,
+    "name": "Fahim Chowdhury",
+    "review": "Good value for money and quick response from the team. Would recommend to others.",
+    "rating": 4,
+    "image": "https://img.icons8.com/?size=100&id=619odUsYGAlM&format=png&color=000000"
+  },
+  {
+    "id": 7,
+    "name": "Rima Sultana",
+    "review": "I had a smooth experience from start to finish. Everything worked as expected.",
+    "rating": 5,
+    "image": "https://img.icons8.com/?size=100&id=OyWe6M3eZZoi&format=png&color=000000"
+  },
+  {
+    "id": 8,
+    "name": "Arif Hossain",
+    "review": "Simple, effective, and reliable. Exactly what I was looking for.",
+    "rating": 4,
+    "image": "https://img.icons8.com/?size=100&id=uV1BJWnTlYdP&format=png&color=000000"
+  }
+]

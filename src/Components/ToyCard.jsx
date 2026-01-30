@@ -2,7 +2,7 @@ import React from 'react';
 
 const ToyCard = ({ toy, onReadMore }) => {
     return (
-        <div className="max-w-xs rounded-lg shadow-lg overflow-hidden border-gray-400 bg-white hover:shadow-xl transition-shadow duration-300">
+        <div className="max-w-xs rounded-lg shadow-lg overflow-hidden border-gray-400 bg-white hover:shadow-xl  transition-transform duration-300 hover:scale-105">
             {/* Image */}
             <div className="relative">
                 <img
