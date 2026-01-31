@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router';
 
-const ToyCard = ({ toy, onReadMore }) => {
+const ToyCard = ({ toy }) => {
     return (
         <div className="max-w-xs rounded-lg shadow-lg overflow-hidden border-gray-400 bg-white hover:shadow-xl  transition-transform duration-300 hover:scale-105">
             {/* Image */}
@@ -25,12 +26,13 @@ const ToyCard = ({ toy, onReadMore }) => {
                     <span className="text-blue-600 font-semibold">
                         ${toy.price || "19.99"}
                     </span>
-                    <button
-                        className="px-3 py-1 bg-blue-500 text-white text-sm rounded hover:bg-blue-600 transition"
-                        onClick={() => onReadMore(toy)}
-                    >
-                        Read More
-                    </button>
+                    <Link to={`/ToyDetails/${toy.toyId}`}>
+                        <button
+                            className="px-3 py-1 bg-blue-500 text-white text-sm rounded hover:bg-blue-600 transition"
+                        >
+                            Read More
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>
