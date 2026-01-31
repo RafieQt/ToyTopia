@@ -9,7 +9,7 @@ import CustomerMarquee from '../Components/CustomerMarquee';
 const Home = () => {
     const toys = useLoaderData();
     return (
-        <div>
+        <div className='bg-gray-50'>
             <h2 className='text-blue-600 font-semibold text-center text-5xl pt-5'>Trending Toys!</h2>
             <SwiperSlider toys={toys}></SwiperSlider>
             <PopularToys toys={toys}></PopularToys>

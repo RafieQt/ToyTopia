@@ -1,22 +1,29 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
+import { toast } from "react-toastify";
 
 const ToyDetails = () => {
-    const Data = useLoaderData();
-    const {toyId} = useParams();
+  const Data = useLoaderData();
+  const { toyId } = useParams();
+  
   const [toy, setToy] = useState({});
-  useEffect(()=>{
-    const toyData = Data.find(toy=> toy.toyId === Number(toyId));
+  useEffect(() => {
+    const toyData = Data.find(toy => toy.toyId === Number(toyId));
     setToy(toyData);
 
-  },[toyId, Data])
+  }, [toyId, Data])
 
-  console.log(toyId);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    toast("Your request has been submitted");
+    
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 py-10 px-4">
       <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-lg p-6 md:p-10">
-        
+
         <div className="grid md:grid-cols-2 gap-8">
           {/* Image Section */}
           <div className="flex justify-center items-center">
@@ -61,14 +68,26 @@ const ToyDetails = () => {
             </div>
 
             {/* Actions */}
-            <div className="flex gap-4">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition">
-                Add to Cart
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="flex justify-start flex-col gap-2">
+                <div>
+                  <p>Your Name</p>
+                  <input type="text" name="name" placeholder="Your Name" className="border-gray-400 border rounder-2xl p-2 w-full" required/>
+                </div>
+                <div>
+                  <p>Your email</p>
+                  <input type="email" name="email" placeholder="Your email" className="border-gray-400 border rounder-2xl p-2 w-full" required/>
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition"
+                
+              >
+                Submit Request
               </button>
-              <button className="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-2 rounded-lg font-medium transition">
-                Back to Toys
-              </button>
-            </div>
+            </form>
           </div>
         </div>
 
