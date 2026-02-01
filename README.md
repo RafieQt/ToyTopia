@@ -1,16 +1,45 @@
-# React + Vite
+#ToyTopia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive web application built with React, integrating authentication with Firebase, and enhanced with interactive UI components like Swiper.js and React Marquee.
 
-Currently, two official plugins are available:
+###Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+User Authentication
 
-## React Compiler
+Sign up and login using email/password
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Google Sign-In with Firebase Authentication
 
-## Expanding the ESLint configuration
+Profile image display and update
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Interactive UI Components
+
+Swiper.js for carousels and sliders
+
+React Marquee for smooth scrolling customer reviews or announcements
+
+Responsive design with Tailwind CSS / DaisyUI
+
+Form Validation
+
+Password validation: requires uppercase and lowercase letters
+
+User-friendly error messages with React Toastify
+
+Navigation
+
+Routing handled with React Router
+
+Protected routes for authenticated users
+
+###Tech Stack
+
+Frontend: React.js, Tailwind CSS, DaisyUI
+
+Authentication: Firebase Authentication
+
+UI Components: Swiper.js, React Marquee, React Icons
+
+Notifications: React Toastify
+
+Routing: React Router

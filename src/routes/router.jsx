@@ -6,6 +6,7 @@ import Register from "../Pages/Register";
 import ToyDetails from "../Pages/ToyDetails";
 import Loading from "../Pages/Loading";
 import ToyQnA from "../Pages/ToyQnA";
+import PrivateRoute from "../HomeLayout/PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -24,11 +25,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/QnA",
-        element: <ToyQnA></ToyQnA>
+        element: <PrivateRoute>
+          <ToyQnA></ToyQnA>
+        </PrivateRoute>
       },
       {
         path: "/ToyDetails/:toyId",
-        element: <ToyDetails></ToyDetails>,
+        element: <PrivateRoute>
+          <ToyDetails></ToyDetails>
+        </PrivateRoute>,
         loader: () => fetch('/data.json'),
         hydrateFallbackElement: <Loading></Loading>
       },
