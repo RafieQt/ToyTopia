@@ -35,10 +35,10 @@ const SignIn = () => {
         const user = result.user;
         setUser(user);
         navigate('/');  
-        console.log(user.photoURL);
+        
       })
       .catch((error) => {
-        console.log(error.code);
+        toast(error.code);
       })
   }
 

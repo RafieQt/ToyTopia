@@ -10,7 +10,7 @@ import { Link } from 'react-router';
 
 
 const SwiperSlider = ({ toys }) => {
-  console.log(toys);
+  
   return (
     <Swiper
       className='my-10 mySwiper'

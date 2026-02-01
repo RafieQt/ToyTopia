@@ -11,7 +11,7 @@ const Navbar = () => {
         toast("logout");
         logoutUser();
     }
-    console.log(user);
+    
     return (
         <div >
             <div className="navbar bg-base-100 shadow-sm px-10 flex items-center justify-between">
